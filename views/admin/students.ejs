@@ -341,13 +341,13 @@
             }
           }
         }
-        if(name== "" || apellido == "" || carrer == "" || edad == ""){
+      if(name== "" || apellido == "" || carrer == "" || edad == ""){
         alertMessage.classList.remove("d-none");
         alertMessage.classList.add("alert-danger");
         alertMessage.classList.remove("alert-success");
         alertMessage.innerHTML = "Debe completar todos los campos"; 
         
-      }if(edad<16 || edad >100 ){
+      }else if (edad<16 || edad >100 ){
         alertMessage.classList.remove("d-none");
         alertMessage.classList.add("alert-danger");
         alertMessage.classList.remove("alert-success");
